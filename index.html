@@ -125,9 +125,7 @@ body {
 .column {
   float: left;
   width: 50%;
-  padding: 30px;
-  
-  height: 300px; /* Should be removed. Only for demonstration */
+  padding: 50px;
 } 
  
 /* Clear floats after the columns */
@@ -135,6 +133,7 @@ body {
   content: "";
   display: table;
   clear: both;
+  
 }
 .container {
   position: relative;
@@ -153,11 +152,16 @@ a:hover {
   text-decoration: none;
   color: white;
 }
-p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; color:#2B2B2B; font-size:15px;}
+p { font-family: Helvetica Neue-Light, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif; color:#2B2B2B; font-size:15px;}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+	
   .column {
-    width: 100%;
+	  display: grid;
+	     grid-template-columns: 1fr;
+	     padding: 1em;
+	     grid-row-gap: 1px;
+		 width: 100%;
   }
 }
 
@@ -246,6 +250,7 @@ p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helv
 	}
 
 }
+
 </style>
   
 <div class="header">
@@ -256,7 +261,7 @@ p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helv
 </div>
 
 <div class="row" style="margin-top:-40px;" >
-  <div class="column" style="background-color:#fff;">
+
 	  
   <div class="container" style="margin-top:-110px; margin-left:46px;"> 
 
@@ -265,7 +270,9 @@ p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helv
 	  </div>
 
 	</div>
-  <div class="row" style="margin-top:440px;">
+	
+	<div class="columns">
+  <div class="row">
     <div class="column" style="background-color:white; width:20%; color:#2b2b2b; margin-left:50px; font-size:13px">
       
     <div class="container"> 
@@ -285,6 +292,7 @@ p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helv
 	
 	    <h1>ARRIENDO DE EQUIPOS</h1>
 <img src=img/c200-left.jpg style="width:300px">
+<h1>Canon C200B</h1>
 	<p>Canon C200b (Solo Body) + Operador + Trípode Manfrotto MVH500AH-755x <br /> $150.000</p>
 
 	<h1>Óptica Canon L:</h1>
@@ -300,8 +308,9 @@ p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helv
 
 	<p>2 Panel Led 600w c/trípode: $30.000</p>
 	<p>Led Yn 200w Bi-color: $10.000</p>
-	<p>Dolly slider: $50.000</p>
     </div>
+	
+	 <div class="row">
     <div class="column" style="background-color:white; width:50%; color:#2b2b2b; margin-left:50px;">
       <h2>Experiencia</h2>
       <p>Cámaras: ARRI Alexa Mini - RED Epic - Blackmagic Micro Cinema Camera - Sony PMW-F3, EX3 - Canon C200, C100, 5D Mark III, 5D Mark II, 6D, 7D, 70D, EOS M50, EOS M, XL1, XL2 - Panasonic GH4, AF100, HVX200, DVX100b - Arri BL, SR16</p><p>
@@ -532,6 +541,7 @@ p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helv
   <br />
   ​</p>
     </div>
+	 <div class="row">
     <div class="column" style="background-color:white; width:20%; color:#2b2b2b; font-size:14px">
       <p>15 Años de Experiencia como profesional independiente en varios proyectos Audiovisuales: Videos institucionales, video clip, grabación de eventos, documentales y ficción en producciones nacionales e internacionales</p>
     
@@ -562,13 +572,12 @@ p { font-family: HelveticaNeue-Light, Helvetica Neue Light, Helvetica Neue, Helv
 Ignacio Carmona <br />
 Director de Fotografía<br />
 +56 9 4-2143376<br />
-<a style="color: white" href="mailto:ignacio@directorfotografia.cl"> ignacio@directorfotografia.cl</a><br />
+<a style="color: white" href="mailto:ignacinematographer@gmail.com"> ignacinematographer@gmail.com</a><br />
 Santiago, Chile<br />
 </p>
     </div>
     
   </div>
-<div style="margin-top:2170px;">
   <div class="caption" style="text-align:center;"><br />
     <span class="border" ><h1>PORTAFOLIO DIGITAL</h1></span>
     </div>
@@ -725,6 +734,7 @@ Santiago, Chile<br />
 <img src="img/portafolio/fotografia-analoga-19.jpg" alt="" class="center" >
 <br />
 
+</div>
 </div>
 </div>
 <footer class="footer-distributed">
